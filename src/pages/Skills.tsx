@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "../skills.css";
+import { ChevronDown, ChevronRight } from "lucide-react";
 
 interface SkillCardProps {
   title: string;
@@ -31,7 +32,7 @@ function SkillCard({ title, children, defaultOpen = true }: SkillCardProps) {
         }}
       >
         <h2>{title}</h2>
-        <span style={{ fontSize: "1.2rem" }}>{isOpen ? "▼" : "▶"}</span>
+        {isOpen ? <ChevronDown size={20} /> : <ChevronRight size={20} />}
       </div>
 
       <div

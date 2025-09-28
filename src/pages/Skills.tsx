@@ -52,8 +52,14 @@ function SkillCard({ title, children, defaultOpen = true }: SkillCardProps) {
 function Skills() {
   return (
     <section>
-      <h1>💻 Skills</h1>
-
+      {window.innerWidth <= 768 ? (
+        <div className="header-phone">
+          <h1 className="icon-title">💻</h1>
+          <h1>Skills</h1>
+        </div>
+      ) : (
+        <h1>💻 Skills</h1>
+      )}
       <SkillCard title="Linguagens">
         <div className="skills-grid">
           <a

@@ -53,7 +53,14 @@ function Card({ title, children, defaultOpen = true }: CardProps) {
 function Perfil() {
   return (
     <section>
-      <h1>👤 Perfil</h1>
+      {window.innerWidth <= 768 ? (
+        <div className="header-phone">
+          <h1 className="icon-title">👤</h1>
+          <h1>Perfil</h1>
+        </div>
+      ) : (
+        <h1>👤 Perfil</h1>
+      )}
 
       <Card title="👤 Informações Pessoais">
         <p>

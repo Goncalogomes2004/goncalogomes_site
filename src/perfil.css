@@ -1,0 +1,72 @@
+.experience-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.experience-item .icon {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.experience-item h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.experience-item .place {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.experience-item .date {
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.experience-item .details {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.badge {
+  display: inline-block;
+  background: #eef2ff;
+  color: #3740ff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+.card-header h2 {
+  margin: 0;
+  flex-grow: 1;
+  position: relative;
+}
+
+.card-header h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.btn-center{
+  justify-self: center;
+  z-index: 100;
+  position: relative; 
+
+}

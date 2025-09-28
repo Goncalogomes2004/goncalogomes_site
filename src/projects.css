@@ -1,0 +1,14 @@
+.project-links{
+  display: flex;
+  flex-direction: column;
+}
+
+.project-links a{
+  max-width: fit-content !important;
+}
+
+
+.content h1 {
+  margin-top: 0 !important; 
+}
+
